@@ -1,0 +1,9 @@
+services:
+  api-dashboard-health-pg:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=docker-dashboard-health
+      - POSTGRESQL_PASSWORD=docker-dashboard-health
+      - POSTGRESQL_URL=dashboardapi
